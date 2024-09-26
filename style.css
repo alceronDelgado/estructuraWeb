@@ -1,62 +1,153 @@
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 body {
   font-family: monospace;
-  background-color: cornflowerblue;
-
-}
-
-main {
-  width: 100%;
-  background-color: yellow;
-  display: flex;
-  /* Con esto definimos el tamaño del main y hace que nuestro footer quede en la parte de abajo x el calculo */
-  height: calc(100vh - 140px);
-
+  overflow-x: hidden;
 }
 
 .header {
+  background-color: #EF476F;
+  display: flex;
   width: 100%;
-  height: 60px;
+  height: 40px;
   font-size: 2rem;
-  text-align: center;
-  background-color: blue;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 25%;
+
+}
+
+.titulo {
+  width: 50%;
+}
+
+.item {
+  font-size: 2rem;
+}
+
+.inicio {
+  border: 1px solid blue;
+  width: 25%;
+
 }
 
 .nav {
   width: 100%;
+  display: flex;
+  font-size: 1.5rem;
+  color: black;
   height: 30px;
-  text-align: center;
-  font-size: 1.3em;
+  display: flex;
+  justify-content: space-between;
+  background-color: #bf4342;
 }
 
-.aside {
-  width: 15%;
-  font-size: 2em;
-  border: 1px solid black;
-  background-color: red;
-  color: white;
+#noticias {
+  width: 20%;
 }
 
 .article {
-  width: 70%;
-  background-color: green;
-  color: black;
+  display: flex;
+  /* width: 100%; */
+  height: 300px;
+  background-color: #ffc300;
 }
 
-.section {
-  width: 15%;
-
-  background-color: aqua;
-  color: black;
+#n1 {
+  height: 100px;
+  width: 30%;
 }
 
-.footer {
+#n2 {
+  width: 30%;
+}
+
+#n3 {
+  padding-left: 8px;
+  display: flex;
+  width: 50%;
+}
+
+.columns1 {
+  background-color: #118AB2;
+  padding: 5px;
+  width: 60%;
+}
+
+.columns2 {
+  background-color: #073B4C;
+  width: 50%;
+}
+
+.article2 {
+  border: 1px solid black;
+  height: 200px;
   width: 100%;
+  display: flex;
+}
+
+.otherMenu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.n10 {
+  border: 1px solid blue;
+  background-color: blue;
+  height: 30px;
+  font-size: 1.8rem;
+  text-align: center;
+
+}
+
+.n11 {
+  width: inherit;
+  background-color: red;
+  flex-grow: 1;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.last {
+  background-color: rgb(199, 73, 94);
+  display: flex;
+  /* justify-content: space-evenly; */
+}
+
+.n12 {
+  /* width: 50%; */
+  background-color: aqua;
+  width: 50%;
+}
+
+.n13 {
+  background-color: pink;
+  width: 50%;
+}
+
+.img {
+  width: 30%;
+
+}
+
+.article2 img {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  border: 1px solid blue;
+}
+
+
+footer {
+  bottom: 0;
   font-size: 1rem;
   text-align: center;
 }
