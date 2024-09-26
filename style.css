@@ -9,6 +9,11 @@ body {
   overflow-x: hidden;
 }
 
+.main {
+  width: 100%;
+  height: calc(100vh - 140px);
+}
+
 .header {
   background-color: #EF476F;
   display: flex;
@@ -16,25 +21,6 @@ body {
   height: 40px;
   font-size: 2rem;
   text-transform: uppercase;
-}
-
-.logo {
-  width: 25%;
-
-}
-
-.titulo {
-  width: 50%;
-}
-
-.item {
-  font-size: 2rem;
-}
-
-.inicio {
-  border: 1px solid blue;
-  width: 25%;
-
 }
 
 .nav {
@@ -46,7 +32,29 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #bf4342;
+  text-transform: capitalize;
 }
+
+
+.logo {
+  width: 25%;
+
+}
+
+.titulo {
+  width: 50%;
+}
+
+.item {
+  font-size: 1.3rem;
+}
+
+.inicio {
+  border: 1px solid blue;
+  width: 25%;
+
+}
+
 
 #noticias {
   width: 20%;
@@ -54,22 +62,25 @@ body {
 
 .article {
   display: flex;
-  /* width: 100%; */
   height: 300px;
-  background-color: #ffc300;
+  background-color: #e0d5ad;
+  text-transform: capitalize;
+  text-align: justify;
+  padding: 10px;
 }
 
 #n1 {
-  height: 100px;
   width: 30%;
+  padding: 10px;
 }
 
 #n2 {
   width: 30%;
+  padding: 10px;
 }
 
 #n3 {
-  padding-left: 8px;
+  padding-left: 10px;
   display: flex;
   width: 50%;
 }
@@ -81,14 +92,14 @@ body {
 }
 
 .columns2 {
-  background-color: #073B4C;
+  background-color: #e36414;
   width: 50%;
+  padding: 5px;
 }
 
 .article2 {
-  border: 1px solid black;
-  height: 200px;
   width: 100%;
+  height: calc(100vh - 470px);
   display: flex;
 }
 
@@ -98,8 +109,19 @@ body {
   flex-direction: column;
 }
 
+.img {
+  width: 40%;
+}
+
+#imagen {
+  /* hago separación a la imagen del contenedor padre llamado img */
+  padding: 30px;
+  width: 100%;
+  height: calc(100vh - 470px);
+  object-fit: cover;
+}
+
 .n10 {
-  border: 1px solid blue;
   background-color: blue;
   height: 30px;
   font-size: 1.8rem;
@@ -112,42 +134,44 @@ body {
   background-color: red;
   flex-grow: 1;
   font-size: 1.8rem;
-  text-align: center;
+  position: relative;
+
+}
+
+#n11 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  left transform: translate(-50%, -50%);
 }
 
 .last {
   background-color: rgb(199, 73, 94);
   display: flex;
-  /* justify-content: space-evenly; */
+  height: 50px;
 }
 
 .n12 {
   /* width: 50%; */
   background-color: aqua;
   width: 50%;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .n13 {
-  background-color: pink;
   width: 50%;
+  background-color: pink;
+  font-size: 2rem;
+  text-align: center;
 }
-
-.img {
-  width: 30%;
-
-}
-
-.article2 img {
-  object-fit: cover;
-  width: 150px;
-  height: 150px;
-  border-radius: 150px;
-  border: 1px solid blue;
-}
-
 
 footer {
-  bottom: 0;
-  font-size: 1rem;
+  /* bottom: 0; */
+  font-size: 3rem;
+  padding-top: 20px;
   text-align: center;
+  height: 100px;
+  border: 1px solid red;
+  text-transform: capitalize;
 }
