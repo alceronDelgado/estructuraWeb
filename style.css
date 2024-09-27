@@ -144,11 +144,14 @@ body {
 
 }
 
+/* 
+TODO:
+Cambiar todo esto del n11 y colocarle un display flex y justify content que sea de center para que no se vea en diferente navegador
+
+*/
 #n11 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-transform: translate(-50%, -50%);
+  display:flex;
+  justify-content:center;
 }
 
 .last {
