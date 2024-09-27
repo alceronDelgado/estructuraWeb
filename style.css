@@ -4,8 +4,14 @@
   margin: 0;
 }
 
+/* Import font */
+@font-face {
+  font-family: "Roboto Mono";
+  src: url(fonts/RobotoMono-MediumItalic.ttf);
+}
+
 body {
-  font-family: monospace;
+  font-family: "Roboto Mono";
   overflow-x: hidden;
 }
 
@@ -142,7 +148,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  left transform: translate(-50%, -50%);
+  text-transform: translate(-50%, -50%);
 }
 
 .last {
